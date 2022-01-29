@@ -39,6 +39,7 @@ const removeTask = (index) => {
   const local = getLocal();
   const m = local.filter((e, m) => m !== index);
   updateLocal(m);
+  // eslint-disable-next-line no-use-before-define
   loadTodo();
 };
 
